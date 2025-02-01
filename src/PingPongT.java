@@ -10,6 +10,9 @@ public class PingPongT extends Thread {
     public void run() {
         while(running) {
             System.out.println(this.PingPong);
+            try {
+                Thread.sleep(500L); // Verlangsamt Schleife (sleep, pausiert für 500 ms)
+            }catch (InterruptedException e) {}
         }
     }
     public void setRunning(boolean running) {

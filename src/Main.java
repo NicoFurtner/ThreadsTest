@@ -16,7 +16,7 @@ public class Main {
         tt2.start();
 
         try {
-            Thread.sleep(1000L);
+            Thread.sleep(10000L); // Lässt PingPongR und PingPongT 10 Sekunden laufen, bevor sie gestoppt werden.
         }catch(InterruptedException e) { }
 
         pingpongr.setRunning(false);
